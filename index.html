@@ -16,28 +16,14 @@
     <header>
         <h1 class="ephesis-regular">Grey Havens Scottish Deerhounds</h1>
         <nav>
-            <div class="topnav">
-                 <!-- Navigation links -->
-                 <div id="myLinks">
-                  <a href="#home" class="active">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#blog">Blog</a>
-                  <a href="#contact">Contact</a>
-                </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-              </div>
-              <script>
-                function myFunction() {
-                  var x = document.getElementById("myLinks");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
-                }
-                </script>
+            <input class="menu" type="checkbox" id="checkbox" name="menu">
+            <label for="checkbox" id="icon">&#9776;</label>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <hr>
@@ -46,8 +32,8 @@
     <main>
         <!--Hero video will go here-->
         <div class="hero-content">
-            <video id="video" autoplay muted loop>
-                <source src="media/video.mp4" type="video/mp4">
+            <video id="video" autoplay muted>
+                <source src="media/video2.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video> 
         </div>
