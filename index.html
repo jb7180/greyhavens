@@ -15,16 +15,30 @@
     <div class="header">
     <header>
         <h1 class="ephesis-regular">Grey Havens Scottish Deerhounds</h1>
-        <nav>
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" id="icon">&#9776;</label>
+        <div class="off-screen-menu">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+        </nav>
+
     </header>
     <hr>
     </div>
@@ -39,8 +53,8 @@
         </div>
         <!--Welcome message will go here-->
         <div class="welcome">
-            <h2>Welcome</h2>
-            <p>Grey Havens is a Scottish Deerhound kennel focused on preserving the historical breed according to the AKC  standard. 
+            <h2 class="newsreader-400">Welcome</h2>
+            <p class="newsreader-400">Grey Havens is a Scottish Deerhound kennel focused on preserving the historical breed according to the AKC  standard. 
                 Our dogs can be found all over the United States and Canada. Many have had successful careers in both conformation showing
                  and lure coursing sports. Whether you want a flashy show dog or a simple loving companion, we are committed to providing 
                  you with the perfect match. Discover why Sir Walter Scott dubbed the Scottish Deerhound . . . </p>
@@ -52,20 +66,22 @@
     <!--Footer will contain search bar, naviation links, copyright, and list of accredidations-->
     <footer>
         <div class="memberships">
-        <p>Members in Good Standing:</br>
-            >    AKC Breeder of Merit</br>
-            >    Scottish Deerhound Club of America</br>
-            >    Mid Atlantic Deerhound Association</p>
-        </div>
-        <div class="footerlinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a></br>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </div>
         <input type="text" placeholder="Search..">
+        <p>Members in Good Standing:<br>
+            >    AKC Breeder of Merit<br>
+            >    Scottish Deerhound Club of America<br>
+            >    Mid Atlantic Deerhound Association</p>
+            <div class="footerlinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a><br class="hide">
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; Grey Havens Scottish Deerhounds</p>
     </footer>
 
+    <script src="index.js"></script> 
 </body>
 
 </html>
