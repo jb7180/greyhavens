@@ -1,0 +1,349 @@
+/*IMPORT RULES*/
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+/*RESET STYLES*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+/*FONT CLASSES*/
+  .newsreader-400 {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ephesis-regular {
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    display: flex;
+}
+
+
+h1 {
+    background-color: #000435;
+    color: #c0c0c0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+hr {
+    border: 1px solid #c0c0c0;
+}
+
+/*THIS IS MY ATTEMPT AT JS NAV MENU*/
+
+.off-screen-menu {
+    background-color: #234f1e;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    /*transition: .3s ease;*/
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color:#000435;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    left: 65%;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 2px;
+    width: 75%;
+    background-color: #c0c0c0;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+nav ul {
+    display: none;
+}
+
+/*THIS WAS MY CHECKBOX NAV MENU*/
+
+/*nav #checkbox {
+    display: none;
+}
+
+nav #icon {
+    font-size: 2rem;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #234f1e;
+    display: none;
+}
+
+nav ul li {
+    padding: 2%;
+    list-style-type: none;
+}
+
+
+nav ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+
+#checkbox:checked ~ ul {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #234f1e;
+} */
+
+/*MAIN STYLES*/
+
+body {
+    background-color: #000435;
+    color: white;
+  
+}
+
+#video {
+    height: auto;
+    width: 100%;
+}
+
+.welcome {
+    text-align: center;
+    padding: 5%;
+    line-height: 1.4;
+}
+
+.quote{
+    text-align: center;
+    font-size: 28px;
+}
+
+.button {
+    margin-left: 41%;
+    background-color: #000435;
+    border: 3px solid #c0c0c0;
+    color: #c0c0c0;
+    padding: 2%;
+    transition-duration: 0.4s;
+    border-radius: 14px;
+}
+
+/*FOOTER STYLES*/
+
+footer {
+    background-color: #234f1e;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+.memberships {
+    line-height: 1.5;
+    color: #c0c0c0;
+    font-size: 0.8rem;
+}
+
+input[type=text] {
+    height: 20px;
+    position: relative;
+    float: right;
+    margin-top: 1%;
+    border-radius: 5px;
+    background-color: #c0c0c0;
+    outline: 1px solid black;
+}
+
+.footerlinks {
+    float: right;
+    position: relative;
+    bottom: 30px;
+}
+
+
+.footerlinks a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 0.9rem;
+    margin-right: 20px;
+
+}
+
+.copyright {
+    color:#c0c0c0;
+    font-size: 0.7rem;
+    position: relative;
+    text-align: center;
+    left: 32%;
+    margin-top: 4%;
+    max-width: fit-content;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 800px) {
+
+.welcome {
+        font-size: 20px;
+        line-height: 2;
+}
+
+.button {
+    position: relative;
+    left: 3%;
+    font-size: 1.25rem;
+    border: 4px solid #c0c0c0;
+    bottom: 25px;
+}
+
+.button:hover {
+    border: 2px solid #e8d28f;
+    color: #e8d28f;
+    cursor: pointer;
+}
+
+/* This was my media screen for a nav with checkbox menu*/
+
+/*#icon {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #000435;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    color: #c0c0c0;
+    display: flex;
+}*/
+
+/*This is my media screen for a javascript nav and menu*/
+
+.ham-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000435;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    color: #c0c0c0;
+    text-decoration: none;
+    padding-right: 25px;
+    float: right;
+}
+
+
+h1 {
+    font-size: 3rem;
+    padding: 1%;
+    position: relative;
+}
+
+.memberships {
+    font-size: 1.1rem;
+    position: relative;
+    left: 2%;
+}
+
+input[type=text] {
+    height: 30px;
+    width: 275px;
+    position: relative;
+    right: 4%;
+    border-radius: 5px;
+    background-color: #c0c0c0;
+    outline: 1px solid black;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.footerlinks {
+    position: relative;
+    right: 3%;
+}
+
+.footerlinks a {
+    margin-right: 23px;
+    font-size: 1.1rem;
+}
+
+.copyright {
+    text-align: center;
+    max-width: fit-content;
+    left: 43%;
+    font-size: 0.9rem;
+}
+
+}
