@@ -24,6 +24,8 @@
     font-style: normal;
   }
 
+/*HEADER STYLES*/
+
 header {
     display: flex;
 }
@@ -41,7 +43,7 @@ hr {
     border: 1px solid #c0c0c0;
 }
 
-/*THIS IS MY ATTEMPT AT JS NAV MENU*/
+/*JS NAV MENU*/
 
 .off-screen-menu {
     background-color: #234f1e;
@@ -57,7 +59,24 @@ hr {
     align-items: center;
     text-align: center;
     font-size: 2rem;
-    /*transition: .3s ease;*/
+    transition: .3s ease;
+}
+
+.off-screen-menu ul {
+    list-style-type: none;
+}
+
+.off-screen-menu ul li {
+    margin-bottom: 45%;
+}
+
+.off-screen-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.off-screen-menu ul li a.active {
+    color:#e8d28f; 
 }
 
 .off-screen-menu.active {
@@ -74,6 +93,7 @@ nav {
     height: 50px;
     width: 50px;
     margin-left: auto;
+    left: 65%;
     position: relative;
 }
 
@@ -115,43 +135,6 @@ nav ul {
     display: none;
 }
 
-/*THIS WAS MY CHECKBOX NAV MENU*/
-
-/*nav #checkbox {
-    display: none;
-}
-
-nav #icon {
-    font-size: 2rem;
-}
-
-nav ul {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #234f1e;
-    display: none;
-}
-
-nav ul li {
-    padding: 2%;
-    list-style-type: none;
-}
-
-
-nav ul li a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
-
-}
-
-#checkbox:checked ~ ul {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #234f1e;
-} */
 
 /*MAIN STYLES*/
 
@@ -185,6 +168,32 @@ body {
     padding: 2%;
     transition-duration: 0.4s;
     border-radius: 14px;
+}
+
+#aboutimg {
+    height: auto;
+    width: 100%;
+}
+
+.about-gh {
+    text-align: center;
+    padding: 5%;
+    line-height: 1.4;
+    margin-top: 3%;
+}
+
+.about-sd {
+    text-align: center;
+    padding: 5%;
+    line-height: 1.4;
+    margin-top: 6%;
+}
+
+#aboutbtn {
+    margin: auto;
+    margin-top: 10%;
+    padding: 5%;
+    font-size: 1rem;
 }
 
 /*FOOTER STYLES*/
@@ -238,11 +247,23 @@ input[type=text] {
 
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
+
+/*MAIN*/
 
 .welcome {
         font-size: 20px;
         line-height: 2;
+}
+
+.about-gh {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.about-sd {
+    font-size: 20px;
+    line-height: 2;
 }
 
 .button {
@@ -259,29 +280,18 @@ input[type=text] {
     cursor: pointer;
 }
 
-/* This was my media screen for a nav with checkbox menu*/
+#aboutbtn {
+    padding: 3%;
+    font-size: 1.2rem;
+}
 
-/*#icon {
+/*NAV*/
+
+.ham-menu {
     display: none;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    background-color: #000435;
-}
-
-nav ul li a {
-    font-size: 1.5rem;
-    color: #c0c0c0;
-    display: flex;
-}*/
-
-/*This is my media screen for a javascript nav and menu*/
-
-.ham-menu {
+.off-screen-menu {
     display: none;
 }
 
@@ -300,12 +310,15 @@ nav ul li a {
     float: right;
 }
 
+/*HEADER*/
 
 h1 {
     font-size: 3rem;
     padding: 1%;
     position: relative;
 }
+
+/*FOOTER*/
 
 .memberships {
     font-size: 1.1rem;
