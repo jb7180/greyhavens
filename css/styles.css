@@ -191,7 +191,8 @@ button {
 }
 
 #learnbtn {
-    margin-left: 37%;
+  /*margin-left: 37%;*/
+    margin-top: 2%;
     padding: 5%;
     font-size: 1rem;
 }
@@ -216,10 +217,15 @@ button {
 }
 
 #aboutbtn {
-    margin: auto;
-    margin-top: 10%;
+  /*margin: auto;*/
+    margin-top: 8%;
     padding: 5%;
     font-size: 1rem;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
 }
 
 .silver {
@@ -269,19 +275,26 @@ input[id=blogsearch] {
     text-align: center;
 }
 
-#placeholderimg {
+.placeholderimg {
     height: 100%;
     width: 100%;
     margin-bottom: 4%;
     outline: 2px dashed #c0c0c0;
 }
 
-#preview {
+.preview {
     margin-left: 4%;
     margin-right: 4%;
 }
 
-#readbtn {
+#readbtn1 {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1rem;
+}
+
+#readbtn2 {
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -465,13 +478,19 @@ button {
 }
 
 #aboutbtn {
+    margin-top: 5%;
     padding: 2%;
     width: 20%;
     font-size: 1.25rem;
 }
 
+.about-sd {
+    margin-top: 0%;
+}
+
 #learnbtn {
-    margin-left: 40%;
+  /*margin-left: 40%;*/
+    margin-top: 1%;
     padding: 2%;
     width: 20%;
     font-size: 1.25rem;
@@ -495,14 +514,13 @@ input[id=blogsearch] {
     font-size: 1.1rem;
 }
 
-#preview {
+.preview {
     line-height: 1.75;
 }
 
-#title {
+.title {
     font-size: 1.5rem;
 }
-
 
 
 .container {
